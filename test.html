@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waving Text</title>
+    <style>
+        .greet {
+            text-align: center;
+        }
+
+        .greet h1, .greet h2, .greet h3 {
+            display: inline-block;
+            animation: wave 2s infinite ease-in-out;
+        }
+
+        .greet h1 {
+            animation-delay: 0.2s;
+        }
+
+        .greet h2 {
+            animation-delay: 0.1s;
+        }
+
+        .greet h3 {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="greet">
+        <h2>Hello, I'm</h2>
+        <h1>Md Samsuddoha</h1>
+        <h3>Assistant Professor @ <a href="https://bu.ac.bd/view-profile.php?editId=400">University of Barishal</a></h3>
+    </div>
+</body>
+</html>

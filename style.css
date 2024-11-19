@@ -1,0 +1,161 @@
+
+/*Navbar*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #192a56;
+    text-transform: uppercase;
+    font-family:fantasy;
+    font-size: large;
+    font-weight:bolder;
+    
+}
+nav ul li a:hover{
+    color: #dcdde1;
+    transition: color .5s ease;
+}
+/*Intro Section*/
+.intro{
+    position: relative;
+    background: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 1),
+     rgba(255, 255, 255, 0.5) 50%,
+     rgba(255, 255, 255, 0) 90%), 
+    url(photo/bu.jpg);
+    /* background-image: url(photo/bu.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%;
+    /* min-height: 100vh;  */
+    /* background-color: #f8f9fa; */
+    /* margin-top: 100px; */
+    padding-top: 140px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    /* max-width: 40%; */
+    width: 20%;
+    text-align: center;
+    /* border: 1px solid gainsboro; */
+    padding: 20px;
+    border-radius: 10px;
+    color: #f8f9fa;
+    /* box-shadow: 0 0 15px 1px; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo h4{
+    line-height: 0.5;
+}
+
+.logo img{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 2px;
+    opacity: .8;
+}
+
+.greet{
+    max-width: 50%; /* Limits the greet div width */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.greet h2{
+    color: black;
+    text-transform: uppercase;
+}
+.greet h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+
+}
+.greet h3{
+    font-style: italic;
+}
+
+/*waved text*/
+.greet h1, .greet h2, .greet h3 {
+    /* display: inline-block; */
+    animation: wave 2s infinite ease-in-out;
+}
+
+.greet h1 {
+    animation-delay: 0.2s;
+}
+
+.greet h2 {
+    animation-delay: 0.1s;
+}
+
+.greet h3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/*about section*/
+.about-me{
+    background-color: #dcdde1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.about-info{
+    width: 70%;
+    margin: auto;
+}
+.about-info h1{
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    border-bottom:#40739e solid 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #44bd32;
+}
+.about-info p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #192a56;
+}
+.about-info h3{
+    font-style: italic;
+    color: #4770d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
