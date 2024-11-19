@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Navbar*/
 nav{
     position: fixed;
@@ -129,9 +133,10 @@ nav ul li a:hover{
         transform: translateY(-10px);
     }
 }
+
 /*about section*/
 .about-me{
-    background-color: #dcdde1;
+    background-color: #eaedfc;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -139,23 +144,31 @@ nav ul li a:hover{
     width: 70%;
     margin: auto;
 }
-.about-info h1{
+.about-info h1, .edu h1{
     text-align: center;
-    width: 20%;
+    width: 30%;
     margin: auto;
     border-bottom:#40739e solid 2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #44bd32;
+    font-size: 40px;
 }
-.about-info p{
+.about-info p, .edu p{
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.8;
     font-size: 20px;
     color: #192a56;
 }
-.about-info h3{
+.about-info h3, .edu h3{
     font-style: italic;
     color: #4770d8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*education section*/
+.edu{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
